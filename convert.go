@@ -26,6 +26,10 @@ func StrToInt64Slice(str, split string) []int64 {
 	return res
 }
 
+func StrToStrSlice(str, split string) []string {
+	return strings.Split(str, split)
+}
+
 func StructToMap(object interface{}) (map[string]interface{}, error) {
 	var (
 		resMap map[string]interface{}
